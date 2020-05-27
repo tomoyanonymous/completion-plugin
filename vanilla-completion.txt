@@ -1,0 +1,29 @@
+PD AutoComplete Information
+
+[filledpolygon]
+
+-desc draws a filled polygon according to data inside a data structure
+
+-args
+float fill_color - RGB ranging from 000 to 888 (base 8)
+float outline_color - RGB ranging from 000 to 888 (base 8)
+float outline_weight - the weight of the outline
+float x - x position (you can use any number of (x,y) pairs)
+float y - y position (you can use any number of (x,y) pairs)
+
+[makefilename]
+
+-desc generates symbols according to a format string.
+
+-args
+symbol string - use "%d" for replacing digits and "%s" for symbols
+
+[threshold~]
+
+-desc threshold~ monitors its input signal and outputs bangs when the signal exceeds a specified "trigger" value, and also when the signal recedes below a "rest" value.
+
+-args
+float t_t - trigger treshold
+float t_d - trigger debounce time
+float r_t - rest threshold
+float r_d - rest debounce time
